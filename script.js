@@ -1,7 +1,7 @@
-const btnCalc = document.querySelector('.calc')
+/*const btnCalc = document.querySelector('.calc')
 btnCalc.addEventListener('click', calcular)
 const btnClear = document.querySelector('.clear')
-btnClear.addEventListener('click', limpar)
+btnClear.addEventListener('click', limpar) */
 
 const resultado = document.querySelector('.resultado')
 
