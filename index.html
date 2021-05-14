@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Free-Lance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Calculadora de Freelance</h1>
+    <p>Você trabalhador guerreiro, tem problemas para calcular o valor do seu trabalho duro?</p>
+    <p> <b>Os seus problemas acabaram!</b> </p>
+    <p>Chegou a calculadora perfeita e bonita pra você ficar feliz e despreocupado na hora de mandar o orçamento para o cliente!</p>
+    <p>*Essa calculadora foi criada a partir de um post no instagram do <a href="https://www.instagram.com/emanual.criativo/">@emanuel.criativo</a></p>
+
+    <div class="containerForm">
+        <div class="insira"><label for="salario">Primeiro, insira aqui o salário que você gostaria de ter: </label>
+        <input type="number" name="salario" id="salario" placeholder="ex:3000"></div>
+
+        <div class="insira"><label for="horasProjeto">Agora, insira aqui a quantidade de horas que você vai precisar para realizar o projeto: </label>
+        <input type="number" name="horasProjeto" id="horasProjeto" placeholder="ex:13"></div>
+
+        <div class="insira"><label for="custosFixos">também coloque seu custo operacional,como gastos com luz, água, internet...</label>
+        <input type="number" name="custosFixs" id="custosFixos" placeholder="ex:100"></div>
+
+        <div class="insira"><label for="lucro">Por fim, adicione uma margem de lucro que você quer ter com o projeto!</label>
+        <input type="number" name="lucro" id="lucro" placeholder="ex: 50 *para 50%"></div>
+        <div class="containerBtn">
+        <button class="btn calc">Calcular</button>
+        <button class="btn clear">Limpar</button>
+        </div>
+        <div class="resultado">Resultado</div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

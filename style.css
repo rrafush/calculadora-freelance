@@ -1,0 +1,129 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(43, 43, 43);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px auto;
+    font-family: 'Architects Daughter', cursive;
+    position: relative;
+    display: block;
+    width: 500px;
+    color: white;
+}
+
+h1::after{
+    content: ' ';
+    background-color: rgb(41, 41, 41);
+    height: 58px;
+    width: 500px;
+    left: 0;
+    bottom: -3%;
+    position: absolute;
+    z-index: -10;
+    transform: rotate(-2deg);
+}
+
+p, label{
+    text-align: center;
+    margin: 5px 20px;
+}
+
+a{
+    color: rgb(57, 130, 199);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.containerForm{
+    margin: 50px auto;
+    background-color: rgb(216, 236, 236);
+    width: 70vw;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.insira{
+    margin: 20px auto;
+}
+
+.resultado{
+    background-color: rgb(44, 44, 44);
+    width: 80%;
+    padding: 20px;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    padding: 10px 50px;;
+    border-style: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.containerBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn:hover{
+    background-color: rgb(33, 57, 112);
+}
+
+input{
+    background-color: transparent;
+    border: solid rgb(77, 77, 77) 1px ;
+    padding: 10px;
+    -moz-appearance: textfield;
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+/* Celular */
+@media only screen and (max-width: 767px){
+
+    p, label{
+        font-size: 0.9rem;
+    }
+
+    h1{
+        font-size: 1.2rem;
+        width: 300px;
+        color: white;
+    }
+    
+    h1::after{
+        height: 50px;
+        width: 290px;
+        top: -50%;
+    }
+}
+
+@media only screen and (max-width: 428px){
+
+    .btn{
+        margin-left: 0;
+    }
+}
